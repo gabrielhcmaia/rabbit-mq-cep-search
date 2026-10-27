@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "publicar": "node --env-file-if-exists=.env rabbit/publicar.js",
-    "consumir": "node --env-file-if-exists=.env rabbit/consumir.js",
-    "api": "node --env-file-if-exists=.env api.js"
+    "publicar": "node --env-file-if-exists=.env rabbit/publicar.ts",
+    "consumir": "node --env-file-if-exists=.env rabbit/consumir.ts",
+    "api": "node --env-file-if-exists=.env api.ts",
+    "typecheck": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,10 @@
   "dependencies": {
     "amqplib": "^2.2.0",
     "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
   }
 }
