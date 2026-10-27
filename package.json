@@ -1,0 +1,19 @@
+{
+  "name": "rabbit-mq-cep-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "publicar": "node --env-file-if-exists=.env rabbit/publicar.js",
+    "consumir": "node --env-file-if-exists=.env rabbit/consumir.js",
+    "api": "node --env-file-if-exists=.env api.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^2.2.0",
+    "express": "^5.3.0"
+  }
+}
