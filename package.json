@@ -7,7 +7,9 @@
   "scripts": {
     "publicar": "node --env-file-if-exists=.env rabbit/publicar.ts",
     "consumir": "node --env-file-if-exists=.env rabbit/consumir.ts",
+    "lote": "node --env-file-if-exists=.env enviar-lote.js",
     "api": "node --env-file-if-exists=.env api.ts",
+    "worker": "node  --env-file-if-exists=.env worker.ts",
     "typecheck": "tsc"
   },
   "keywords": [],

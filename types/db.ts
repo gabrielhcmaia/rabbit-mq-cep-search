@@ -16,6 +16,12 @@ export interface DadosCep {
   siafi: string;
 }
 
+export interface ErroViaCep {
+  erro: boolean | string;
+}
+
+export type RespostaViaCep = DadosCep | ErroViaCep;
+
 export interface LinhaCep {
   id: number;
   cep: string;
